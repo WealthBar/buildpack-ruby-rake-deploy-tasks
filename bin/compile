@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-rake db:migrate post_migration
+bundle rake db:migrate post_migration
