@@ -26,6 +26,9 @@ fi
 
 tasks=(`echo ${DEPLOY_TASKS}`)
 cd $build_dir
+echo "executing rake $DEPLOY_TASKS..."
+echo `pwd`
+
 for task in ${tasks[@]}; do
-  bundle exec rake $task
+  rake $task
 done
